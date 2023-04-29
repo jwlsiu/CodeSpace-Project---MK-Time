@@ -74,7 +74,7 @@
 		width: 100vw;
 		height: 100vh;
 	}
-	/*
+	
 	.carousel-item {
 		height: 90vh;
 		max-height: 90vh;
@@ -83,7 +83,7 @@
 		width: 100%
 		height: auto;
 	}
-	*/
+	
 	@media (max-width: 480px) {
 		#carouselWithCaptions .carousel-item img {
 			height: 50vh;
