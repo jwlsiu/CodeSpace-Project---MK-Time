@@ -2,12 +2,14 @@
 	.center {
 		text-align: center;
 	}
+	/* Body of webpage has a navy background colour and white text */
 	body {
 		font-family: Lora;
 		font-size: 15px;
 		color: #ffffff;
 		background-color: #131d27;
-	}	
+	}
+	/* CSS for the banner at the top of the page */
 	.banner {
 		text-align: center;
 		height: 35px;
@@ -32,6 +34,7 @@
 		height: 90%;
 		padding: 5px;
 	}
+	/* Position of the searchbar */
 	.searchbar{
 		position: relative;
 		bottom: 5px;
@@ -51,6 +54,7 @@
 		padding: 20px;
 		color: #ffffff;
 	}
+	/* Navbar background colour */
 	.navbar {
 		background-color: #131d27;
 	}
@@ -72,7 +76,7 @@
 			padding: 3px;
 		}
 	}
-	/* Social media icons, white colour */
+	/* Social media icons size in a white colour */
 	svg {
 		padding: 5px;
 		fill: #ffffff;
@@ -83,7 +87,7 @@
 	svg:hover {
 		fill: #737373;
 	}
-	/* Home (index) page */
+	/* Index page */
 	#carouselWithCaptions .carousel-item img {
 		object-fit: cover;
 		object-position: center;
@@ -95,13 +99,14 @@
 	/* Create gradient on carousel images, so that there is more contrast between text and image */
 	#carouselWithCaptions .carousel-item:before {
 		content: "";
-		background-image: linear-gradient(rgba(0,0,0,0.1),transparent);
+		background-image: linear-gradient(#000000,2%,transparent);
 		display: block;
 		position: absolute;
 		top: 0;
 		width: 100vw;
 		height: 100vh;
 	}
+	/* Image height is 70% of view height */
 	.carousel-item {
 		height: 70vh;
 		max-height: 70vh;
@@ -109,35 +114,15 @@
 	.carousel-height {
 		width: 100%;
 		height: auto;
-	}
-	
-	@media (max-width: 480px) {
-		#carouselWithCaptions .carousel-item {
-			height: 50vh;
-		}
-		.carousel-caption {
-			display: none !important;
-		}
-	}
-	@media (min-width: 481px) and (max-width: 767px) {
-		.carousel-height {
-			max-width: 100%;
-			height: 50vh;
-		}
-	}
+	}	
+	/* Size of the collection images on Index page */
 	.collections-image {
 		max-width: 100%;
 		max-height: 700px;
 		padding: -5px;
 		display: block;
 	}
-	/*
-	@media only screen and (max-width: 768px) {
-		.collections-image {
-			max-height: auto;
-		}
-	}
-	*/
+	/* Buttons on top of the collection images */
 	.collections-button {
 		position: absolute;
 		bottom: 2%;
@@ -155,6 +140,7 @@
 		width: 325px;
 		font-family: Lora;
 	}
+	/* Colour of button when mouse hovers over it */
 	.collections-button:hover, .slide-1-button:hover {
 		background-color: #953000;
 	}
@@ -164,45 +150,49 @@
 	}
 	.carousel-text-light {
 		font-family: Lora;
-		font-size: 46px;  
+		font-size: 36px; 
 		color: #ffffff;
 		padding: 0px;
+		margin-bottom: 0em;
 	}
-	.carousel-text-dark {
-		font-family: Lora;
-		font-size: 46px;  
-		color: #131d27;
-		padding: 0px;
+	/* Reduce the space between h5 element in the Index page */
+	.indexh5 {
+		margin-top: 0em;
 	}
 	.carousel-item-next, .carousel-item-prev, .carousel-item.active {
 		display: block !important;	
 		}
+	/* Slide 1 text position */
 	.slide-1-text {
 		text-align: center;
-		top: 5px;
+		top: -15px;
 	}
+	/* Slide 2 text position */
 	.slide-2-text {
 		text-align: left;
-		top: 30px;
+		top: 20px;
+		left: 100px;
 	}
+	/* Slide 3 text position */
 	.slide-3-text {
 		text-align: center;
-		top: 5px;
+		top: -20px;
 	}
 	.slide-button {
 		position: absolute;
 		background-color: #C94100;
 		transform: translate(-50%, -5%);
-		-ms-transform: translate(-50%, -5%);
+		-ms-transform: translate(-50%, 5%);
 		color: white;
 		font-size: 16px;
-		padding: 6px 12px;
+		padding: 3px 6px;
 		border: none;
 		cursor: pointer;
 		border-radius: 5px;
 		text-align: center;
-		width: 300px;
+		width: 250px;
 		font-family: Lora;
+		margin-top: 0px;
 	}
 
 	/* Our Story */
@@ -235,6 +225,7 @@
 		width: 95%;
 		height: 40px;
 	}
+	/* Form that has a box around as a border */
 	.sign-in-form, .register-form, .no-account {
 		width: 70vw;
 		margin: 0 auto;
@@ -306,6 +297,7 @@
 		max-width:45%;
 		margin: 0 auto;
 	}
+	/* When screen sixe is less than 468px, the container is only 85% of the screen width size */
 	@media (max-width: 468px){
 		.contact-container{
 			max-width: 85%;
@@ -333,13 +325,7 @@
 	.crossout {
 		text-decoration: line-through;
 	}
-	/*
-	@media (max-width: 480px) {
-		.card-deck {
-			height: 50%;
-		}
-	}
-	*/
+	/* Create a round button with an arrow image */
 	#goToTopBtn {
 		  display: none; /* Hidden by default */
 		  position: fixed; /* Fixed/sticky position */
