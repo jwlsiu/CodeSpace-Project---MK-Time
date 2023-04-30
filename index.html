@@ -7,13 +7,11 @@
       <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Fauna+One">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-      <!-- Link to external style sheet. --->
-	  <link rel="stylesheet" type="text/css" href="mkstyle.css">
-      <title>MK Time | Luxury Watches</title>
+	  <!-- Link to external style sheet. --->
+      <link rel="stylesheet" type="text/css" href="mkstyle.css">
+      <title>MK Time | Our Story</title>
    </head>
-   <body>  
+   <body>
 	  <!-- Create a banner at the top of page. Text automatically changes after every 5 seconds. -->
       <div class="banner">
          <p id="header">FREE NEXT DAY DELIVERY WITH ALL ORDERS
@@ -21,17 +19,20 @@
       </div>
 	  <!-- Create array with text. Then create a function that will continously loop through the array. -->
       <script>
-         let text = ["SIGN UP TO OUR NEWSLETTER TO GET OUR LATEST OFFERS", "LIFETIME GUARANTEE", "FREE NEXT DAY DELIVERY WITH ALL ORDERS"];
+         let text = ["SIGN UP TO OUR NEWSLETTER TO GET OUR LATEST OFFERS", "LIFETIME GUARANTEE", "FREE NEXT DAY DELIVERY WITH ALL ORDERS"];     
          bannerText(0);
          function bannerText(i) {
-         	if (text.length > i) {
-         		setTimeout(function() {
-         			document.getElementById("header").innerHTML = text[i];
-         			bannerText(++i);
-         		}, 5000);
-         	} else if (text.length == i) {
-         	bannerText(0);
-         	}
+         
+             if (text.length > i) {
+                 setTimeout(function() {
+                     document.getElementById("header").innerHTML = text[i];
+                     bannerText(++i);
+                 }, 5000); // 5 second (in milliseconds)
+         
+             } else if (text.length == i) { // Loop
+                 bannerText(0);
+             }
+         
          }
       </script>
 	  <!-- Create three equal-width columns. Middle column displaying company logo to center the logo. -->
@@ -55,7 +56,7 @@
          </div>
       </div>
 	  <!-- Create a Navbar with a dropdown section. -->
-      <nav class="navbar navbar-border navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-border navbar-expand-lg navbar-dark" style="background-color: #131d27">
          <a class="navbar-brand" href="index.html">HOME</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -103,7 +104,7 @@
                <img src="images/slide-1.jpg" class="d-block w-100" alt="Slide 1">
                <div class="carousel-caption d-none d-md-block slide-1-text">
                   <h1 class="carousel-text-light">Luxury Watches</h1>
-                  <p>Exclusive timepiece designs crafted with the finest materials.</p>
+                  <h5 class="indexh5">Exclusive timepiece designs crafted with the finest materials.</h5>
                   <button class="slide-button">EXPLORE THE COLLECTION</button>
                </div>
             </div>
@@ -115,7 +116,7 @@
                </div>
             </div>
             <div class="carousel-item" data-interval="5000">
-               <img src="images/slide-3.jpg" class="d-block w-100" alt="Slide 3">
+               <img src="images/slide-3.jpg" class="d-block w-100 alt="Slide 3">
                <div class="carousel-caption d-none d-md-block slide-3-text">
                   <h1 class="carousel-text-light">Luxury Watches</h1>
                   <h5>Exclusive timepiece designs crafted with the finest materials.</h5>
